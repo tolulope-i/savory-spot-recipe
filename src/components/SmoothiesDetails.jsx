@@ -16,6 +16,14 @@ const SmoothiesDetails = () => {
         return <Error message={error} />;
     }
 
+    useEffect(() => {
+
+        const scrollToTop = () => {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        };
+
+    }, [])
+
     return (
         <div className="p-8 mx-auto bg-light-accent min-h-screen">
             {data && (

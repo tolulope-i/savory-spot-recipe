@@ -3,6 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone, faEnvelope, faClock } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+
+  useEffect(() => {
+
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
+
+  }, [])
+
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}

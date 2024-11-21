@@ -12,6 +12,15 @@ const Smoothies = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredSmoothies, setFilteredSmoothies] = useState([]);
 
+
+    useEffect(() => {
+
+        const scrollToTop = () => {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        };
+
+    }, [])
+
     useEffect(() => {
         if (data) {
             const filtered = data.drinks.filter(smoothie =>
