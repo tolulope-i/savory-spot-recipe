@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import useCocktailFetch from './useCocktailFetch';
 import Preloader from './Preloader';
@@ -12,7 +12,7 @@ const CocktailDetails = () => {
         };
 
     }, []) 
-    
+
     const { id } = useParams();
     const { data, isPending, error } = useCocktailFetch(id);
 

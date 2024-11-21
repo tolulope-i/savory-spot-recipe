@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import useSmoothieFetch from './useSmoothieFetch';
 import Preloader from './Preloader'; // Import Preloader component

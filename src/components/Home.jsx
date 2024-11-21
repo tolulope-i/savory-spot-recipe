@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from './Hero';
 import Cuisines from './Cuisines';
 import Cocktails from './Cocktails';
