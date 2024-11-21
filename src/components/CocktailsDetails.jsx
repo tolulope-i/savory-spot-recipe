@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import useCocktailFetch from './useCocktailFetch';
 import Preloader from './Preloader';
 
 const CocktailDetails = () => {
-
-    useEffect(() => {
-
-        const scrollToTop = () => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        };
-
-    }, []) 
 
     const { id } = useParams();
     const { data, isPending, error } = useCocktailFetch(id);

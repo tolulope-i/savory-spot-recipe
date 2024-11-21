@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import useFetch from './useFetch';
-import Preloader from './Preloader'; // Import the Preloader component
-import Error from './Error'; // Ensure you import the Error component
+import Preloader from './Preloader'; 
+import Error from './Error'; 
 
 const CuisinesDetails = () => {
     const { id } = useParams();
     const { data, isPending, error } = useFetch(`https://dummyjson.com/recipes/${id}`);
 
-    // Show Preloader if data is still loading
     if (isPending) {
         return <Preloader />;
     }
@@ -16,14 +15,6 @@ const CuisinesDetails = () => {
     if (error) {
         return <Error message={error} />;
     }
-
-    useEffect(() => {
-
-        const scrollToTop = () => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        };
-
-    }, [])
 
     return (
         <div className="p-8 mx-auto bg-light-accent min-h-screen">

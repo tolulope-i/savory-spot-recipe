@@ -1,16 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 
 const About = () => {
-
-  useEffect(() => {
-
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    };
   
-  }, [])
-
   return (
     <div className="bg-gray-50">
       <div

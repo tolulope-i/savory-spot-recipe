@@ -13,15 +13,6 @@ const Cocktails = () => {
     const [filteredCocktails, setFilteredCocktails] = useState([]);
 
     useEffect(() => {
-
-        const scrollToTop = () => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        };
-
-    }, [])
-
-    // Filter cocktails whenever the data or search term changes
-    useEffect(() => {
         if (data) {
             const filtered = data.drinks.filter(cocktail =>
                 cocktail.strDrink.toLowerCase().includes(searchTerm.toLowerCase())

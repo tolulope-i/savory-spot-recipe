@@ -13,14 +13,6 @@ const Cuisines = () => {
     const [filteredRecipes, setFilteredRecipes] = useState([]);
 
     useEffect(() => {
-
-        const scrollToTop = () => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        };
-
-    }, [])
-
-    useEffect(() => {
         if (data) {
             const filtered = data.recipes.filter(recipe =>
                 recipe.name.toLowerCase().includes(searchTerm.toLowerCase())

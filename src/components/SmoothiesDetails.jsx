@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import useSmoothieFetch from './useSmoothieFetch';
-import Preloader from './Preloader'; // Import Preloader component
-import Error from './Error'; // Ensure you import the Error component
+import Preloader from './Preloader'; 
+import Error from './Error'; 
 
 const SmoothiesDetails = () => {
     const { id } = useParams();
@@ -15,14 +15,6 @@ const SmoothiesDetails = () => {
     if (error) {
         return <Error message={error} />;
     }
-
-    useEffect(() => {
-
-        const scrollToTop = () => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        };
-
-    }, [])
 
     return (
         <div className="p-8 mx-auto bg-light-accent min-h-screen">
@@ -42,7 +34,7 @@ const SmoothiesDetails = () => {
                         <p className="mt-2 text-lg text-center text-gray-600">Glass: {data.strGlass}</p>
                     </div>
 
-                    {/* Ingredients and Instructions */}
+                  
                     <div className="md:w-1/2 bg-white p-6 rounded-lg shadow-xl border-2 border-gray-200">
                         {/* Ingredients Section */}
                         <div className="mb-6">
