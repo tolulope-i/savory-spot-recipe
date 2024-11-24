@@ -24,26 +24,27 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 text-white">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:underline hover:text-primary">
+              <Link to="/" className="hover:underline hover:text-primary">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/cuisines" className="hover:underline hover:text-primary">
+              <Link to="/cuisines" className="hover:underline hover:text-primary">
                 Recipes
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:underline hover:text-primary">
+              <Link to="/about" className="hover:underline hover:text-primary">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:underline hover:text-primary">
+              <Link to="/contact" className="hover:underline hover:text-primary">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
+
         </div>
 
         <div>
@@ -87,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        
+
         <div>
           <h3 className="text-xl font-semibold mb-4 text-white">Newsletter</h3>
           <p className="text-sm text-gray-300 mb-4">
