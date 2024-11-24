@@ -15,6 +15,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import Preloader from './components/Preloader';
 import NotFound from './components/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,7 @@ const App = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       document.body.classList.remove('no-scroll');
-    }, 2000);
+    }, 1000);
 
     document.body.classList.add('no-scroll');
 
@@ -36,6 +37,7 @@ const App = () => {
         <Preloader />
       ) : (
         <Router>
+          <ScrollToTop />
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
