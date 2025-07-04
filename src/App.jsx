@@ -16,6 +16,7 @@ import TermsOfService from './components/TermsOfService';
 import Preloader from './components/Preloader';
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
+import MeroRecipe from './components/MeroRecipe';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +49,7 @@ const App = () => {
             <Route path="/smoothie" element={<Smoothies />} />
             <Route path="/smoothie/:id" element={<SmoothiesDetails />} />
             <Route path="/about" element={<About />} />
+            <Route path="/askchefsavory" element={<MeroRecipe/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />

@@ -29,6 +29,7 @@ const NavBar = () => {
                                 <li><Link to="/cocktail" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>Cocktails</Link></li>
                                 <li><Link to="/smoothie" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>Smoothies</Link></li>
                                 <li><Link to="/contact" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>contact</Link></li>
+                                <li><Link to="/askchefsavory" className="p-3 bg-primary hover:bg-accent text-white rounded-lg transition-all ease-in-out duration-700 font-medium shadow-sm" onClick={closeMobileMenu}>Ask Chef Savory</Link></li>
                                
                             </ul>
                         </div>
@@ -50,6 +51,7 @@ const NavBar = () => {
                             <li><Link to="/cocktail" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>Cocktails</Link></li>
                             <li><Link to="/smoothie" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>Smoothies</Link></li>
                             <li><Link to="/contact" className="hover:text-primary transition-all duration-500 capitalize" onClick={closeMobileMenu}>contact</Link></li>
+                            <li><Link to="/askchefsavory" className="p-3 bg-primary hover:bg-accent text-white rounded-lg transition-all ease-in-out duration-700 font-medium shadow-sm" onClick={closeMobileMenu}>Ask Chef Savory</Link></li>
                         
                         </ul>
                     </div>
