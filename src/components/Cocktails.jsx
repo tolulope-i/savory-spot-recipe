@@ -57,7 +57,7 @@ const Cocktails = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {filteredCocktails.slice(0, displayCount).map(cocktail => (
-                    <div key={cocktail.idDrink} className="border rounded-lg shadow-lg p-4">
+                    <div key={cocktail.idDrink} className="border rounded-lg shadow-sm p-4">
                         <Link to={`/cocktail/${cocktail.idDrink}`}>
                             <img
                                 src={cocktail.strDrinkThumb}

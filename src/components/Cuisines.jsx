@@ -55,7 +55,7 @@ const Cuisines = () => {
             {filteredRecipes.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {filteredRecipes.slice(0, visibleRecipes).map(recipe => (
-                        <div key={recipe.id} className="border rounded-lg shadow-lg p-4">
+                        <div key={recipe.id} className="border rounded-lg shadow-sm p-4">
                             <Link to={`/recipe/${recipe.id}`}>
                                 <img
                                     src={recipe.image}

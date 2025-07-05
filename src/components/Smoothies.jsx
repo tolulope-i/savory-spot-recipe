@@ -47,7 +47,7 @@ const Smoothies = () => {
             <div className="relative w-full max-w-lg mx-auto mb-6">
                 <input
                     type="search"
-                    className="w-full p-1 pl-14 pr-4 rounded-3xl  border-1 border-transparent shadow-xl focus:outline-none focus:ring-4 focus:ring-accent transition-all duration-300 ease-in-out"
+                    className="w-full p-1 pl-14 pr-4 rounded-3xl  border-1 border-transparent shadow-md focus:outline-none focus:ring-4 focus:ring-accent transition-all duration-300 ease-in-out"
                     placeholder="Search smoothies"
                     value={searchTerm}
                     onChange={handleSearchChange}
@@ -59,7 +59,7 @@ const Smoothies = () => {
             {data && data.drinks && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {filteredSmoothies.slice(0, displayCount).map(smoothie => (
-                        <div key={smoothie.idDrink} className="border rounded-lg shadow-lg p-4 z-50">
+                        <div key={smoothie.idDrink} className="border rounded-lg shadow-sm p-4 z-50">
                             <Link  to={`/smoothie/${smoothie.idDrink}`}>
                                 <img
                                     src={smoothie.strDrinkThumb}
