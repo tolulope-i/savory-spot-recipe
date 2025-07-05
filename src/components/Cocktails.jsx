@@ -46,7 +46,7 @@ const Cocktails = () => {
             <div className="relative w-full max-w-lg mx-auto mb-6">
                 <input
                     type="search"
-                    className="w-full p-1 pl-14 pr-4 rounded-3xl  border-1 border-transparent shadow-xl focus:outline-none focus:ring-4 focus:ring-accent transition-all duration-300 ease-in-out"
+                    className="w-full p-1 pl-14 pr-4 rounded-3xl  border-1 border-transparent shadow-md focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-300 ease-in-out"
                     placeholder="Search cocktails"
                     value={searchTerm}
                     onChange={handleSearchChange}
