@@ -7,7 +7,7 @@ const SYSTEM_PROMPT =
  ingredients. Format your response in markdown to make it easier to render in web pages`
 
 
- const hf = new InferenceClient(import.meta.env.VITE_CHEF_SAVORY_KEY)
+ const hf = new InferenceClient(import.meta.env.VITE_CHEF_MERO_KEY)
 
 export async function getRecipeFromMistral(ingredientsArray) {
     const ingredientsString = ingredientsArray.join(", ")
